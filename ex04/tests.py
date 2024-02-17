@@ -29,8 +29,6 @@ def test_elem_basics():
     # Arguments order :
     assert str(Elem('div', {}, None, 'double')) == '<div></div>'
     # Argument names :
-    # import pdb; pdb.set_trace()
-    print(str(Elem(tag='body', attr={}, content=Elem(), tag_type='double')))
     assert str(Elem(tag='body', attr={}, content=Elem(),
                     tag_type='double')) == '<body>\n  <div></div>\n</body>'
     # With elem as content :
